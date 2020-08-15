@@ -1,0 +1,170 @@
+Predictions for rsa-comb-data.csv run at 2020-08-14 23:16:45
+
+Arguments specified: alpha=1.0, append=False, compare=True, data_files=['rsa-comb-data.csv'], nonincremental=False, output_file='predictions.txt', predict_single=False, succinct=False
+
+Objects/worlds:
+R1: {'characteristics': {'class': 'object', 'color': 'red', 'type': 'dress'}, 'p': 1.0}
+R2: {'characteristics': {'class': 'object', 'color': 'blue', 'type': 'dress'}, 'p': 1.0}
+R3: {'characteristics': {'class': 'object', 'color': 'red', 'type': 'hat'}, 'p': 1.0}
+
+Words:
+dress: {'lexical semantics': {'type': 'dress'}, 'p': 1.0}
+object: {'lexical semantics': {'class': 'object'}, 'p': 1.0}
+red: {'lexical semantics': {'color': 'red'}, 'p': 1.0}
+
+Possible utterances:
+dress: Word 1: {'dress': {'lexical semantics': {'type': 'dress'}, 'p': 1.0}}
+
+red dress: Word 1: {'red': {'lexical semantics': {'color': 'red'}, 'p': 1.0}}
+           Word 2: {'dress': {'lexical semantics': {'type': 'dress'}, 'p': 1.0}}
+
+red object: Word 1: {'red': {'lexical semantics': {'color': 'red'}, 'p': 1.0}}
+            Word 2: {'object': {'lexical semantics': {'class': 'object'}, 'p': 1.0}}
+
+Predictions:
+Word 1: truthiness value matrix:
+         R1   R2    R3
+dress  0.50  0.5  0.00
+red    0.67  0.0  0.33
+
+Word 1: L₀ p(w|c = [], word):
+         R1   R2    R3
+dress  0.50  0.5  0.00
+red    0.67  0.0  0.33
+
+Word 1: S₁ p(word|c = [], w):
+    dress   red
+R1   0.43  0.57
+R2   1.00  0.00
+R3   0.00  1.00
+
+Word 1: L₁ p(w|c, word):
+         R1   R2    R3
+dress  0.30  0.7  0.00
+red    0.36  0.0  0.64
+
+Word 2: (partial) truthiness value matrix:
+             R1   R2   R3
+red dress   1.0  0.5  0.0
+red object  0.5  0.5  0.5
+
+Word 2: (full) truthiness value matrix:
+            R1   R2  R3
+dress        1  1.0   0
+red dress    1  0.5   0
+red object   1  0.5   1
+
+Word 2: L₀ p(w|c, word):
+              R1   R2    R3
+dress       0.50  0.5  0.00
+red dress   1.00  0.0  0.00
+red object  0.67  0.0  0.33
+
+Word 2: S₁ p(word|c, w):
+    dress  red dress  red object
+R1   0.43       0.38        0.19
+R2   1.00       0.00        0.00
+R3   0.00       0.00        1.00
+
+Word 2:  L₁ p(w|c, word):
+              R1   R2    R3
+dress       0.30  0.7  0.00
+red dress   1.00  0.0  0.00
+red object  0.16  0.0  0.84
+
+========================================
+========================================
+
+Predictions for rsa-comb-data.csv run at 2020-08-14 23:16:46
+
+Arguments specified: alpha=1.0, append=False, compare=True, data_files=['rsa-comb-data.csv'], nonincremental=False, output_file='predictions.txt', predict_single=True, succinct=False
+
+Objects/worlds:
+R1: {'characteristics': {'class': 'object', 'color': 'red', 'type': 'dress'}, 'p': 1.0}
+R2: {'characteristics': {'class': 'object', 'color': 'blue', 'type': 'dress'}, 'p': 1.0}
+R3: {'characteristics': {'class': 'object', 'color': 'red', 'type': 'hat'}, 'p': 1.0}
+
+Words:
+dress: {'lexical semantics': {'type': 'dress'}, 'p': 1.0}
+object: {'lexical semantics': {'class': 'object'}, 'p': 1.0}
+red: {'lexical semantics': {'color': 'red'}, 'p': 1.0}
+
+Possible utterances:
+dress: Word 1: {'dress': {'lexical semantics': {'type': 'dress'}, 'p': 1.0}}
+
+red dress: Word 1: {'red': {'lexical semantics': {'color': 'red'}, 'p': 1.0}}
+           Word 2: {'dress': {'lexical semantics': {'type': 'dress'}, 'p': 1.0}}
+
+red object: Word 1: {'red': {'lexical semantics': {'color': 'red'}, 'p': 1.0}}
+            Word 2: {'object': {'lexical semantics': {'class': 'object'}, 'p': 1.0}}
+
+Partial utterances: ['red', 'dress']
+
+Predictions for partial utterances:
+Truthiness value matrix:
+         R1   R2    R3
+red    0.67  0.0  0.33
+dress  0.50  0.5  0.00
+
+L₀ p(w|c, word):
+         R1   R2    R3
+red    0.67  0.0  0.33
+dress  0.50  0.5  0.00
+
+S₁ p(word|c, w):
+     red  dress
+R1  0.57   0.43
+R2  0.00   1.00
+R3  1.00   0.00
+
+L₁ p(w|c, word):
+         R1   R2    R3
+red    0.36  0.0  0.64
+dress  0.30  0.7  0.00
+
+========================================
+========================================
+
+Predictions for rsa-comb-data.csv run at 2020-08-14 23:16:46
+
+Arguments specified: alpha=1.0, append=False, compare=True, data_files=['rsa-comb-data.csv'], nonincremental=True, output_file='predictions.txt', predict_single=False, succinct=False
+
+Objects/worlds:
+R1: {'characteristics': {'class': 'object', 'color': 'red', 'type': 'dress'}, 'p': 1.0}
+R2: {'characteristics': {'class': 'object', 'color': 'blue', 'type': 'dress'}, 'p': 1.0}
+R3: {'characteristics': {'class': 'object', 'color': 'red', 'type': 'hat'}, 'p': 1.0}
+
+Words:
+dress: {'lexical semantics': {'type': 'dress'}, 'p': 1.0}
+object: {'lexical semantics': {'class': 'object'}, 'p': 1.0}
+red: {'lexical semantics': {'color': 'red'}, 'p': 1.0}
+
+Possible utterances:
+dress: {'lexical semantics': {'type': 'dress'}, 'p': 1.0}
+red dress: {'lexical semantics': {'color': 'red', 'type': 'dress'}, 'p': 1.0}
+red object: {'lexical semantics': {'color': 'red', 'class': 'object'}, 'p': 1.0}
+
+Predictions:
+Truth value matrix:
+            R1  R2  R3
+dress        1   1   0
+red dress    1   0   0
+red object   1   0   1
+
+L₀ p(w|u):
+             R1   R2   R3
+dress       0.5  0.5  0.0
+red dress   1.0  0.0  0.0
+red object  0.5  0.0  0.5
+
+S₁ p(u|w):
+    dress  red dress  red object
+R1   0.25        0.5        0.25
+R2   1.00        0.0        0.00
+R3   0.00        0.0        1.00
+
+L₁ p(w|u):
+             R1   R2   R3
+dress       0.2  0.8  0.0
+red dress   1.0  0.0  0.0
+red object  0.2  0.0  0.8
