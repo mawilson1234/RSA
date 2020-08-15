@@ -1,6 +1,6 @@
-Predictions for rsa-comb-data.csv run at 2020-08-15 10:09:09
+Predictions for rsa-comb-data.csv run at 2020-08-15 10:14:03
 
-Arguments specified: alpha=1.0, append=False, compare=True, data_files=['rsa-comb-data.csv', 'rsa-comb-data2.csv'], nonincremental=False, output_file='predictions.txt', predict_single=False, succinct=True
+Arguments specified: alpha=1.0, append=False, compare=True, data_files=['rsa-comb-data.csv', 'rsa-comb-data2.csv'], nonincremental=False, output_file='test.txt', predict_single=False, succinct=False
 
 Objects/worlds:
 R1: {'characteristics': {'class': 'object', 'color': 'red', 'type': 'dress'}, 'p': 1.0}
@@ -76,9 +76,9 @@ red object  0.16  0.0  0.84
 ========================================
 ========================================
 
-Predictions for rsa-comb-data.csv run at 2020-08-15 10:09:09
+Predictions for rsa-comb-data.csv run at 2020-08-15 10:14:04
 
-Arguments specified: alpha=1.0, append=False, compare=True, data_files=['rsa-comb-data.csv', 'rsa-comb-data2.csv'], nonincremental=False, output_file='predictions.txt', predict_single=True, succinct=True
+Arguments specified: alpha=1.0, append=False, compare=True, data_files=['rsa-comb-data.csv', 'rsa-comb-data2.csv'], nonincremental=False, output_file='test.txt', predict_single=True, succinct=False
 
 Objects/worlds:
 R1: {'characteristics': {'class': 'object', 'color': 'red', 'type': 'dress'}, 'p': 1.0}
@@ -126,9 +126,9 @@ dress  0.30  0.7  0.00
 ========================================
 ========================================
 
-Predictions for rsa-comb-data.csv run at 2020-08-15 10:09:09
+Predictions for rsa-comb-data.csv run at 2020-08-15 10:14:04
 
-Arguments specified: alpha=1.0, append=False, compare=True, data_files=['rsa-comb-data.csv', 'rsa-comb-data2.csv'], nonincremental=True, output_file='predictions.txt', predict_single=False, succinct=True
+Arguments specified: alpha=1.0, append=False, compare=True, data_files=['rsa-comb-data.csv', 'rsa-comb-data2.csv'], nonincremental=True, output_file='test.txt', predict_single=False, succinct=False
 
 Objects/worlds:
 R1: {'characteristics': {'class': 'object', 'color': 'red', 'type': 'dress'}, 'p': 1.0}
@@ -142,9 +142,7 @@ red: {'lexical semantics': {'color': 'red'}, 'p': 1.0}
 
 Possible utterances:
 dress: {'lexical semantics': {'type': 'dress'}, 'p': 1.0}
-
 red dress: {'lexical semantics': {'color': 'red', 'type': 'dress'}, 'p': 1.0}
-
 red object: {'lexical semantics': {'color': 'red', 'class': 'object'}, 'p': 1.0}
 
 Predictions:
@@ -175,9 +173,9 @@ red object  0.2  0.0  0.8
 ========================================
 ========================================
 
-Predictions for rsa-comb-data2.csv run at 2020-08-15 10:09:09
+Predictions for rsa-comb-data2.csv run at 2020-08-15 10:14:04
 
-Arguments specified: alpha=1.0, append=False, compare=True, data_files=['rsa-comb-data.csv', 'rsa-comb-data2.csv'], nonincremental=False, output_file='predictions.txt', predict_single=False, succinct=True
+Arguments specified: alpha=1.0, append=False, compare=True, data_files=['rsa-comb-data.csv', 'rsa-comb-data2.csv'], nonincremental=False, output_file='test.txt', predict_single=False, succinct=False
 
 Objects/worlds:
 R1: {'characteristics': {'class': 'object', 'color': 'red', 'type': 'dress'}, 'p': 1.0}
@@ -209,31 +207,31 @@ red object: Word 1: {'red': {'lexical semantics': {'color': 'red'}, 'p': 1.0}}
 Predictions:
 Word 1: truthiness value matrix:
           R1    R2    R3    R4
-dress   0.50  0.50  0.00  0.00
 blue    0.00  0.50  0.00  0.50
-red     0.67  0.00  0.33  0.00
+dress   0.50  0.50  0.00  0.00
 object  0.25  0.25  0.25  0.25
+red     0.67  0.00  0.33  0.00
 
 Word 1: L₀ p(w|c = [], word):
           R1    R2    R3    R4
-dress   0.50  0.50  0.00  0.00
 blue    0.00  0.50  0.00  0.50
-red     0.67  0.00  0.33  0.00
+dress   0.50  0.50  0.00  0.00
 object  0.25  0.25  0.25  0.25
+red     0.67  0.00  0.33  0.00
 
 Word 1: S₁ p(word|c = [], w):
-    dress  blue   red  object
-R1   0.35  0.00  0.47    0.18
-R2   0.40  0.40  0.00    0.20
-R3   0.00  0.00  0.57    0.43
-R4   0.00  0.67  0.00    0.33
+    blue  dress  object   red
+R1  0.00   0.35    0.18  0.47
+R2  0.40   0.40    0.20  0.00
+R3  0.00   0.00    0.43  0.57
+R4  0.67   0.00    0.33  0.00
 
 Word 1: L₁ p(w|c, word):
           R1    R2    R3    R4
-dress   0.47  0.53  0.00  0.00
 blue    0.00  0.38  0.00  0.62
-red     0.45  0.00  0.55  0.00
+dress   0.47  0.53  0.00  0.00
 object  0.16  0.18  0.38  0.29
+red     0.45  0.00  0.55  0.00
 
 Word 2: (partial) truthiness value matrix:
               R1   R2   R3   R4
@@ -275,9 +273,9 @@ red object   0.22  0.00  0.78  0.00
 ========================================
 ========================================
 
-Predictions for rsa-comb-data2.csv run at 2020-08-15 10:09:09
+Predictions for rsa-comb-data2.csv run at 2020-08-15 10:14:04
 
-Arguments specified: alpha=1.0, append=False, compare=True, data_files=['rsa-comb-data.csv', 'rsa-comb-data2.csv'], nonincremental=False, output_file='predictions.txt', predict_single=True, succinct=True
+Arguments specified: alpha=1.0, append=False, compare=True, data_files=['rsa-comb-data.csv', 'rsa-comb-data2.csv'], nonincremental=False, output_file='test.txt', predict_single=True, succinct=False
 
 Objects/worlds:
 R1: {'characteristics': {'class': 'object', 'color': 'red', 'type': 'dress'}, 'p': 1.0}
@@ -333,9 +331,9 @@ dress  0.30  0.7  0.00  0.0
 ========================================
 ========================================
 
-Predictions for rsa-comb-data2.csv run at 2020-08-15 10:09:09
+Predictions for rsa-comb-data2.csv run at 2020-08-15 10:14:04
 
-Arguments specified: alpha=1.0, append=False, compare=True, data_files=['rsa-comb-data.csv', 'rsa-comb-data2.csv'], nonincremental=True, output_file='predictions.txt', predict_single=False, succinct=True
+Arguments specified: alpha=1.0, append=False, compare=True, data_files=['rsa-comb-data.csv', 'rsa-comb-data2.csv'], nonincremental=True, output_file='test.txt', predict_single=False, succinct=False
 
 Objects/worlds:
 R1: {'characteristics': {'class': 'object', 'color': 'red', 'type': 'dress'}, 'p': 1.0}
@@ -351,13 +349,9 @@ red: {'lexical semantics': {'color': 'red'}, 'p': 1.0}
 
 Possible utterances:
 blue object: {'lexical semantics': {'color': 'blue', 'class': 'object'}, 'p': 1.0}
-
 dress: {'lexical semantics': {'type': 'dress'}, 'p': 1.0}
-
 object: {'lexical semantics': {'class': 'object'}, 'p': 1.0}
-
 red dress: {'lexical semantics': {'color': 'red', 'type': 'dress'}, 'p': 1.0}
-
 red object: {'lexical semantics': {'color': 'red', 'class': 'object'}, 'p': 1.0}
 
 Predictions:

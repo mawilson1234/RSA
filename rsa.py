@@ -684,9 +684,9 @@ for data_file in args.data_files:
 
 				file.write('\nPossible utterances:\n')
 				for utterance in possible_utterances:
-					file.write(f'{utterance.rstrip(" STOP")}: {possible_utterances[utterance]}\n\n')
+					file.write(f'{utterance.rstrip(" STOP")}: {possible_utterances[utterance]}\n')
 
-				file.write('Predictions:')	
+				file.write('\nPredictions:')	
 		pragmatic_listener(possible_utterances, objects, verbose = verbose, output = output)
 		# Restore them in case someone is running this interactively and wants them back
 		possible_utterances = incremental_possible_utterances
@@ -713,9 +713,9 @@ for data_file in args.data_files:
 
 				file.write('\nPossible utterances:\n')
 				for utterance in possible_utterances:
-					file.write(f'{utterance.rstrip(" STOP")}: {possible_utterances[utterance]}\n\n')
+					file.write(f'{utterance.rstrip(" STOP")}: {possible_utterances[utterance]}\n')
 
-				file.write('Predictions:')	
+				file.write('\nPredictions:')	
 		pragmatic_listener(possible_utterances, objects, verbose = verbose, output = output)
 		# Restore them in case someone is running this interactively and wants them back
 		possible_utterances = incremental_possible_utterances
