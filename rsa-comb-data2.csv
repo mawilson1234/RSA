@@ -1,0 +1,32 @@
+﻿label,type,attribute,value
+R1,object,type,dress
+R1,object,color,red
+R1,object,class,object
+R1,object,p,1
+R2,object,type,dress
+R2,object,color,blue
+R2,object,class,object
+R2,object,p,1
+R3,object,type,hat
+R3,object,color,red
+R3,object,class,object
+R3,object,p,1
+red,word,color,red
+red,word,p,1
+dress,word,type,dress
+dress,word,p,1
+object,word,class,object
+object,word,p,1
+dress,utterance,,
+red dress,utterance,,
+red object,utterance,,
+red,c,,
+dress,c,,
+R4,object,type,hat
+R4,object,color,blue
+R4,object,class,object
+R4,object,p,1
+blue,word,color,blue
+blue,word,p,1
+blue object,utterance,,
+object,utterance,,
